@@ -1,0 +1,30 @@
+Prompt,Output,Questions,Expected Output
+"1. Go to Transactions > Bank > Make Deposits > List. 2. From the Deposits list, click Edit next to the deposit you want to delete. 3. On the Deposit page, under Actions, click Delete. 4. click OK","1. click[Transactions], click[Bank], click[Make Deposits], click[List], 2. search[Deposit #1], select[Deposit #1], click[Edit], 3. click[Delete], 4. click[OK]","1. Go to Transactions > Bank > Make Deposits > List. 2. From the Deposits list, click Edit next to the deposit #1 you want to modify. 3. On the Deposit page, modify the saved deposit as required. 4. Click Save","1. click[Transactions], click[Bank], click[Make Deposits], click[List], 2. search[Deposit #1], select[Deposit #1], click[Edit], 3. modify[Deposit #1], 4. click[Save]"
+"1. Go to Setup > Company > General Preferences.
+2. On the General Preferences page, click the Languages subtab
+3. In the Language column, select the language.
+4. Click Add.
+5. Click Save.","1. click[Setup], click[Company], click[General Preferences], 2. click[Language], 3. click[English], 4. click[Add], 5. click[Save]","1. Go to Setup > Company > Enable Features.
+2. On the Company subtab, check the Multiple Currencies box.
+3. Click Save.","1. click[Setup], click[Company], click[Enable Features],
+2. check[Multiple Currencies], 3. click[Save]"
+"1. Go to Setup > Company > Enable Features.
+2. On the Company subtab, scroll to the International features.
+3. Check the Multi-Language feature box.
+4. Click Save.","1. click[Setup], click[Company], click[Enable Features],
+2. search[International Features], 3. check[Multi-Language], 4. click[Save]","1. Go to Setup > Company > Enable Features.
+2. Click Employees subtab.
+3. Check Payroll box.
+4. Select the applicable boxes such as time tracking and service printed checks and stubs, for additional payroll related features.
+5. Click Save.","1. click[Setup], click[Company], click[Enable Features],
+2. click[Employees], 3. check[Payroll], 4. select[Time Tracking], select[Service Printed], 5. click[Save]"
+"1. Go to Setup > Company > Enable Features.
+2. Click the Employees subtab.
+3. Check the Payroll box.
+4. For additional payroll related features, such as time tracking and service printed checks and stubs, select the applicable boxes.
+5. Click Save.","1. click[Setup], click[Company], click[Enable Features],
+2. click[Employees], 3. check[Payroll], 4. select[Box for additional feature], 5. click[Save]","1. Go to Customization > Forms > Transaction Form PDF Layouts. 2. Click Customize next to the layout you want to view. 3. To see a preview of your printing output, click Preview","click[Customization], click[Forms], click[Transaction Form PDF Layouts], click[Customize], click[Preiew]"
+"1. Go to Customization > Forms > Transaction Form PDF Layouts. 2. Click Customize next to the layout you want to view. 3. To see a preview of your printing output, click Preview","click[Customization], click[Forms], click[Transaction Form PDF Layouts], click[Customize], click[Preiew]","1. Go to Customization > Lists, Records, & Fields > Transaction Body Fields > New.
+2. Enter a Label and optional Description for the custom payroll transaction body field.
+3. On the Applies To subtab, check the Paycheck box.
+4. Click Save.","1. click[Customization], click[Lists, Records, & Fields], click[Transaction Body Fields], click[New], 2. input[Label and optional Description], 3. check[Paycheck], 4. click[Save]"
