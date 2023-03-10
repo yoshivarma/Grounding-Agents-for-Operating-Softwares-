@@ -1,0 +1,7 @@
+Prompt,Output,Question
+Go to Reports > Inventory/Items > Inventory Revenue.,"click[Reports], click[Inventory/Items], click[Inventory Revenue]","Go to Setup > Company > Enable Features > Check company page > Click Save."
+"Go to Setup > Company > General Preferences > Click the Languages subtab > In the Language column, select the language > Click Add > Click Save.","click[Setup], click[Company], click[General Preferences], click[English], click[Language], click[Add], click[Save]",Go to Setup > Company > General Preferences > Check the Web Site Hosting Files field > Click Save.
+"Go to Setup > Support > Case Types > New > Check input > From the company list, select a Subsidiary > Click Save.","click[Setup], click[Support], click[Case Types], click[New], check[input], select[Subsidiary], click[Save]","Go to Setup > Payroll > Setup Tasks > Set Up Payroll > From the Subsidiary list, select a Subsidiary > Click Save."
+"Go to Setup > Company > Enable Features > On the Company subtab, scroll to the International features > Check the Multi-Language feature box > Click Save.","click[Setup], click[Company], click[Enable Features], select[International features], check[Multi-Language], click[Save]",Go to Reports > Files > Payments > Select an Option > Check a Value > Click Save.
+"Go to Setup > Company > Enable Features > On the payroll page, scroll to the Payroll subtab > Check the Payroll box > Click Save.","click[Setup], click[Company], click[Enable Features],
+click[Employees], select[Payroll], check[Payroll], click[Save]",
