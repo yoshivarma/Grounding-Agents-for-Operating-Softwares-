@@ -9,4 +9,6 @@ conda create --name 696ds -y
 conda install -n 696ds pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia -y
 conda install -n 696ds -c huggingface transformers -y
 conda install -n 696ds ipykernel -y
+conda install -n 696ds -c conda-forge ipywidgets -y
+conda install -n 696ds pandas -y
 python -m ipykernel install --user --name 696ds --display-name="696ds"
