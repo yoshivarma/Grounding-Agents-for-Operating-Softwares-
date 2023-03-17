@@ -1,0 +1,1591 @@
+[
+    {
+        "status": "Waiting for review",
+        "title": "To add the Deposit permission:",
+        "instruction": "<p>If you want to record a customer deposit, follow the preceding steps but select the Customer Deposit permission. To record a customer deposit, see <a href=\"section_N1296669.html\">Recording a Customer Deposit</a>.</p>",
+        "output": [
+            {
+                "meta": "How should related articles be handled?"
+            }
+        ],
+        "steps": [
+            {
+                "instruction": "<p>Log in as an administrator.</p>",
+                "description": "Log in as an administrator",
+                "meta": "Unsure: Don't know how to login (need to see the UI)",
+                "output": []
+            },
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Users/Roles &gt; Manage Roles</em>.</p>",
+                "description": "Go to the Manage Roles page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Users/Roles"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Manage Roles"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Manage Roles page, click <strong>Edit</strong> next to the custom role you want to modify.</p>",
+                "description": "Edit the custom role",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Role"
+                        ],
+                        "meta": "How to pick the exact role?"
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Permissions</strong> subtab of the Role page, look for the Transactions sublist.</p>",
+                "description": "Go to the Transactions sublist",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Permissions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the dropdown list in the Permission column, select <strong>Deposit</strong>.</p>",
+                "description": "Select the Deposit permission",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Permission"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Permission",
+                            "Deposit"
+                        ],
+                        "meta": "How to pick the exact permission? Used second param to specify the permission"
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the dropdown list in the Level column, select the level of access for the permission.</p>",
+                "description": "Set the level of access for the permission",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Level"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Level"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>OK</strong>.</p>",
+                "description": "Click OK",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "OK"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html"
+    },
+    {
+        "status": "Waiting for review",
+        "title": "To make a deposit:",
+        "description": "How to make a Deposit",
+        "steps": [
+            {
+                "description": "Go to the Make Deposits page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    }
+                ],
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits</em>.</p>"
+            },
+            {
+                "instruction": "<p>In the Primary Information section:</p>",
+                "output": [],
+                "description": "Fill out the Primary Information section",
+                "steps": [
+                    {
+                        "description": "Set the custom form",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Custom Form"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Custom Form"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Select the custom form for this deposit.</p><p>The system generated deposit number appears.</p>"
+                    },
+                    {
+                        "description": "Set the bank account",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Bank Account"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Bank Account"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Select the bank account for the deposit.</p><p>The currency and exchange rate display for the account. For information about exchange rates, see <a href=\"section_N1401566.html\">Currency Exchange Rates</a>.</p><p>If the bank account's currency is the same as the subsidiary's base currency, the exchange rate is a read-only field</p>"
+                    },
+                    {
+                        "description": "Describes the Amount Field",
+                        "output": [],
+                        "instruction": "<p>The <strong>Amount</strong> field shows the total amount of payments, other deposits, and cash back selected or entered on the <strong>Deposits</strong> subtab.</p>"
+                    },
+                    {
+                        "description": "Set the date of the deposit",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Date"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Date"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Accept"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Accept today's date, or enter the date of the deposit.</p>"
+                    },
+                    {
+                        "description": "Set the posting period",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Posting Period"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Posting Period"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Select a posting period, if you use the <strong>Accounting Periods</strong> feature.</p>"
+                    },
+                    {
+                        "description": "Set the memo",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Memo"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Memo"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Optionally, enter a memo.</p>"
+                    },
+                    {
+                        "description": "Check the To Be Printed box",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "To Be Printed"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "To Be Printed"
+                                ]
+                            }
+                        ],
+                        "instruction": "<p>Check the <strong>To Be Printed</strong> box if you want to enter multiple deposits before printing the deposit slips for your records. See <a href=\"section_N1543179.html#bridgehead_N1543222\">Printing Multiple Deposit Slips</a>.</p>"
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the Classification section, select a department, class, and location for this deposit, if needed.</p><p>If you use NetSuite OneWorld, the subsidiary defaults to that associated with the selected bank account.</p>",
+                "description": "Fill out the Classification section",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Department"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Department"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Class"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Class"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Location"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Deposits</strong> subtab, enter the items for the deposit.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Deposits"
+                        ]
+                    }
+                ],
+                "description": "Enter the items for the deposit",
+                "steps": [
+                    {
+                        "instruction": "<p>The <strong>Payments</strong> subtab lists all payments posted to the <strong>Undeposited Funds</strong> account. Check the box next to each item to include in this deposit.</p><p>You can filter the items by date, date range, or payment processing profile.</p><p>The <strong>Amount</strong> column shows the payment amount in the currency of the bank account, which was entered when received for a cash sale, invoice, or other transaction. If you must change the amount, click the link in the <strong>Date</strong> column to go to the source transaction.</p><p>If the field is empty, you must manually enter the amount. NetSuite does not populate the field if the payment currency is different from the bank account’s currency, and the bank and subsidiary currencies are also different.</p><p>If the payment currency is different from the bank’s currency, and the bank and subsidiary currencies are the same, NetSuite uses the stored exchange rate to calculate the amount.</p>",
+                        "description": "Select payments to include in the deposit",
+                        "meta": "Unsure, please check this one. Do we need a for loop?",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Payments"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Payment"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Payment"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>On the <strong>Other Deposits</strong> subtab, enter items not received as payments recorded to the <strong>Undeposited Funds</strong> account.</p><p>Enter the name, amount (positive number), account, payment method, and payment number for each item. Optionally enter a classification and memo. Click <strong>Add</strong>.</p>",
+                        "description": "Enter other deposits",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Other Deposits"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Name"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Name"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Amount"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Amount"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Account"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Account"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Payment Method"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Payment Method"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Payment Number"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Payment Number"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Classification"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Classification"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Memo"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Memo"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>On the <strong>Cash Back</strong> subtab, enter the amount of cash back you received from this deposit. Enter the amount of cash you received, account, classification, and memo. Click <strong>Add</strong>.</p>",
+                        "description": "Enter cash back",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Cash Back"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Amount"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Amount"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Account"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Account"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Classification"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Classification"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Memo"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Memo"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Communication</strong> subtab, you can attach files and notes to this transaction.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Communication"
+                        ]
+                    }
+                ],
+                "description": "Attach files and notes to the deposit",
+                "steps": [
+                    {
+                        "description": "Add a note to the deposit",
+                        "instruction": "<p>On the <strong>User Notes</strong> subtab, enter a title and note for any comments you want to add to this transaction. Click <strong>Add</strong> after each note</p>",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "User Notes"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Title"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Title"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Note"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Note"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Add"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>On the <strong>Files</strong> subtab, select and attach files from the File Cabinet related to this transaction. To upload a new file to the File Cabinet, select <strong>New</strong> from the dropdown list in the <strong>Attach Files</strong> column.</p>",
+                        "description": "Attach files to the deposit",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Files"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Attach Files"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Files"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>Use the <strong>Events</strong>, <strong>Tasks</strong>, and <strong>Phone Calls</strong> subtabs to add to attach activities, such as events, phone calls, and tasks to this transaction. For more information, see <a href=\"section_N1084924.html\">Attaching Events, Tasks, and Calls to Records and Transactions</a>.</p>",
+                        "description": "Attach events, tasks, and phone calls to the deposit",
+                        "meta": "Unsure, please check this one: I don't think we have enough information for this",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Events"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Tasks"
+                                ]
+                            },
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Phone Calls"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>If you use NetSuite OneWorld and the Multi-Book Accounting feature is provisioned in your account, the <strong>Accounting Books</strong> subtab appears. This subtab shows the secondary books associated with the selected deposit, if any, and their respective base currencies and exchange rates. For information about Multi-Book Accounting, see <a href=\"chapter_3831569045.html\">Using Multi-Book Accounting</a>.</p>",
+                "description": "View the accounting books associated with the deposit",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounting Books"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>After you enter all the items for the deposit, verify the deposit total amount is correct and click <strong>Save</strong>.</p>",
+                "description": "Save the deposit",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html"
+    },
+    {
+        "status": "Waiting for review",
+        "title": "To edit a saved deposit in the Deposits list:",
+        "description": "Edit a saved deposit",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits &gt; List</em>.</p>",
+                "description": "Go to the Deposits list",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the Deposits list, click <strong>Edit</strong> next to the deposit you want to modify.</p>",
+                "description": "Click Edit next to the deposit you want to modify",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Deposit page, modify the saved deposit as required.</p>",
+                "description": "Modify the saved deposit as required",
+                "meta": "Unsure, please check this one: What can be modified?",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p><p>If you modified the deposit amount, a prompt to unreconcile the transaction appears. Click <strong>OK</strong>. Open the correct statement period for the transaction and reconcile the transaction again.</p>",
+                "description": "Save the deposit",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "OK"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html"
+    },
+    {
+        "title": "To delete an existing deposit from the Deposits list:",
+        "status": "Waiting for review",
+        "description": "Delete a deposit",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits &gt; List</em>.</p>",
+                "description": "Go to the Deposits list",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the Deposits list, click <strong>Edit</strong> next to the deposit you want to delete.</p>",
+                "description": "Click Edit next to the deposit you want to delete",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Deposit page, under <strong>Actions</strong>, click <strong>Delete</strong>.</p>",
+                "description": "Click Delete",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Delete"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>At the prompt to confirm the action, click <strong>OK</strong>.</p>",
+                "description": "Click OK",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "OK"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html"
+    },
+    {
+        "title": "To enter a funds transfer:",
+        "status": "Waiting for review",
+        "description": "Enter a funds transfer",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Transfer Funds</em>.</p>",
+                "description": "Go to the Transfer Funds page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transfer Funds"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>From Account</strong> field, select the source account containing the funds that you want to transfer.</p><p>The balance of this account and its currency denomination appear next to the <strong>From Account</strong> field.</p>",
+                "description": "Select the source account containing the funds that you want to transfer",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "From Account Field"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "From Account Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>To Account</strong> field, select the target account to receive the funds.</p><p>The balance of this account and its currency denomination appear next to the <strong>To Account</strong> field. The <strong>Exchange Rate</strong> between the currencies in the two accounts displays below the two currency denominations.</p>",
+                "description": "Select the target account to receive the funds",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "To Account Field"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "To Account Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Select the posting period for this transfer.</p><p>The period must be an open period.</p>",
+                "description": "Select the posting period for this transfer",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Posting Period Field"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Posting Period Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Accept or select the date in the <strong>Date</strong> field.</p>",
+                "description": "Accept or select the date in the Date field",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Date Field"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Date Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the top <strong>Amount</strong> field, enter the amount of funds, in the account's currency, to be transferred from the account identified in the <strong>From Account</strong> field.</p><p>The second <strong>Amount</strong> field displays the amount to be transferred into the account identified in the <strong>To Account</strong> field, after currency translation.</p>",
+                "description": "Enter the amount of funds to transfer",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Amount Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Amount Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Enter an optional memo.</p>",
+                "description": "Enter an optional memo",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Memo Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Memo Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Enter a department, class, or location if appropriate.</p>",
+                "description": "Enter a department, class, or location if appropriate",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Department Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Department Field"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Class Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Class Field"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Location Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Location Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1548087.html"
+    },
+    {
+        "title": "To record cash back from a deposit:",
+        "description": "How to record cash back from a deposit",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Create a deposit. For more information, see <a href=\"section_N1542431.html\">Making Deposits</a>.</p>",
+                "description": "Create a deposit",
+                "output": [],
+                "meta": "Do we want to have an action for going to another page? Can produce loops. But, too much involved for this 1 step otherwise."
+            },
+            {
+                "instruction": "<p>Click the <strong>Cash Back</strong> subtab.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Cash Back"
+                        ]
+                    }
+                ],
+                "description": "Click the Cash Back subtab",
+                "steps": [
+                    {
+                        "instruction": "<p>In the <strong>Amount</strong> field, enter the amount of cash you got back.</p>",
+                        "description": "Enter the amount of cash you got back",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Amount Field"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Amount Field"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>Select the account the deposit comes from.</p>",
+                        "description": "Select the account the deposit comes from",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Account Field"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Account Field"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>Select a department, class or location.</p>",
+                        "description": "Select a department, class or location",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Department Field"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Department Field"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Class Field"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Class Field"
+                                ]
+                            },
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Location Field"
+                                ]
+                            },
+                            {
+                                "action": "select",
+                                "param": [
+                                    "Location Field"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "instruction": "<p>Enter an optional memo.</p>",
+                        "description": "Enter an optional memo",
+                        "output": [
+                            {
+                                "action": "focus",
+                                "param": [
+                                    "Memo Field"
+                                ]
+                            },
+                            {
+                                "action": "type",
+                                "param": [
+                                    "Memo Field"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p><p>Repeat the steps above for any other cash items you received from deposits.</p>",
+                "description": "Click Add",
+                "meta": "Do we want a looping action?",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1543413.html"
+    },
+    {
+        "title": "To void a check:",
+        "description": "How to void a check",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Write Checks &gt; List</em>.</p>",
+                "description": "Go to Transactions > Bank > Write Checks > List",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Write Checks"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>Edit</strong> link for the check to be voided.</p>",
+                "description": "Click the Edit link for the check to be voided",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Void</strong>.</p><p>If you are voiding this check with a reversing journal entry, the Voiding Journal page appears. Click <strong>Save</strong>.</p><p>The system sets the check’s status to Voided and records a journal entry with an opposite amount that cancels out the general ledger impact of the check. For more information on creating a journal entry, see <a href=\"section_N1469880.html\">Making Journal Entries</a>.</p><p>If you are voiding this check without a reversing journal entry, the system sets the status to Voided and sets the transaction amount to zero. If the check was previously cleared, a confirmation window appears warning you that voiding the check may cause an inconsistency in your account reconciliation, like an incorrect balance. The check becomes unreconciled if previously reconciled, and the check is unmatched or has its cleared status removed. You can click <strong>Cancel</strong> to not void the check or click <strong>OK</strong> to void the check.</p>",
+                "description": "Click Void",
+                "meta": "Currently choosing one thing, but there are two options. Do we want to have a branching action?",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Void"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3951602420.html"
+    },
+    {
+        "title": "To reset check numbering:",
+        "description": "How to reset check numbering",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Accounting &gt; Accounts, or Setup &gt; Accounting &gt; Chart of Accounts</em>.</p>",
+                "description": "Go to Lists > Accounting > Accounts, or Setup > Accounting > Chart of Accounts",
+                "meta": "Currently choosing one thing, but there are two options. Do we want to have a branching action?",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounting"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounts"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the list of accounts, click <strong>Edit</strong> next to the bank account for which you want to reset check numbering.</p>",
+                "description": "Click Edit next to the account",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Next Check Number</strong> field, enter the check number to use for the next check written from this account.</p>",
+                "description": "Enter starting check number",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Next Check Number Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Next Check Number Field"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1545131.html"
+    },
+    {
+        "title": "To enter non-check debit transactions:",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Write Checks</em>.</p>",
+                "description": "Go to Write Checks Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Write Checks"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Check page, verify that the correct bank account appears in the <strong>Account</strong> field.</p>",
+                "description": "Verify correct bank account",
+                "output": [],
+                "meta": "Should this do anything? Thought no, but it could focus the field"
+            },
+            {
+                "instruction": "<p>Enter the payment information in the appropriate fields.</p>",
+                "description": "Enter payment information",
+                "meta": "Do we want to reference another action here? Otherwise, we need to add a lot of steps, and I don't know what's involved",
+                "output": []
+            },
+            {
+                "instruction": "<p>In the <strong>Check Number</strong> field, enter <strong>Debit</strong> or other text to indicate that the payment is not made by a check.</p>",
+                "description": "Enter Debit in Check Number field",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Check Number Field"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Check Number Field",
+                            "Debit"
+                        ],
+                        "meta": "Using second param as text to type"
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p><p>This debit appears on the register for the account.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1547301.html"
+    },
+    {
+        "title": "To enter non-cash debit transactions while reconciling a bank statement:",
+        "description": "How to enter non-cash debit transactions while reconciling a bank statement",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Reconcile Bank Statement</em>.</p>",
+                "description": "Go to Reconcile Bank Statement Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Reconcile Bank Statement"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>New Charges</strong> subtab.</p>",
+                "description": "Click New Charges subtab",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "New Charges Subtab"
+                        ]
+                    }
+                ],
+                "steps": [
+                    {
+                        "instruction": "<p>Fill in the appropriate information for the charge.</p>",
+                        "description": "Fill in charge information",
+                        "meta": "Unknown: Charge information",
+                        "output": []
+                    },
+                    {
+                        "instruction": "<p>Click <strong>Add</strong>.</p>",
+                        "description": "Click Add",
+                        "output": [
+                            {
+                                "action": "click",
+                                "param": [
+                                    "Add"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Complete the rest of the reconciliation.</p><p>For complete reconciliation instructions, see <a href=\"section_N1552329.html\">Reconciling Bank Statements</a>.</p><p>When you have cleared all the transactions listed on the statement and entered any additional transactions, the statement balance and cleared balance should match. Use the Difference field to track your progress.</p>",
+                "description": "Complete reconciliation",
+                "output": [],
+                "meta": "Unknown: Reconciliation instructions, reference to Reconciling Bank Statements"
+            },
+            {
+                "instruction": "<p>When finished, you can:</p><ul>\n                <li>\n                  <p>Click <strong>Save</strong> to reconcile your bank statement.</p>\n                </li>\n                <li>\n                  <p>Click <strong>Save &amp; Print</strong> to save and print your reconciliation.</p>\n                </li>\n                <li>\n                  <p>Click <strong>Hold</strong> to hold your reconciliation until you return to save or print it.</p>\n                </li>\n              </ul>",
+                "description": "Click Save, Save & Print, or Hold",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1547301.html"
+    },
+    {
+        "title": "To delete a funds transfer:",
+        "description": "How to delete a funds transfer",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Transfer Funds &gt; List</em>.</p>",
+                "description": "Go to Transfer Funds List Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transfer Funds"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the Transfers list, click <strong>Edit</strong> next to the funds transfer you want to delete.</p>",
+                "description": "Click Edit next to funds transfer",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ],
+                "meta": "Relative positioning? How do we know which funds transfer to delete?"
+            },
+            {
+                "instruction": "<p>On the Transfer page, under <strong>Actions</strong>, click <strong>Delete</strong>.</p>",
+                "description": "Click Delete",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Delete"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>At the prompt to confirm the action, click <strong>OK</strong>.</p>",
+                "description": "Click OK",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "OK"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_159441881294.html"
+    },
+    {
+        "title": "To add a new company credit card account:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts &gt; New</em>.</p>"
+            },
+            {
+                "instruction": "<p>In the <strong>Type</strong> list, select <strong>Credit Card</strong>.</p>"
+            },
+            {
+                "instruction": "<p>Enter the number to identify this account.</p>"
+            },
+            {
+                "instruction": "<p>Enter a name for the account.</p>"
+            },
+            {
+                "instruction": "<p>Complete other fields as needed.</p>"
+            },
+            {
+                "instruction": "<p>If you use NetSuite OneWorld, choose the subsidiary to which this credit card should be assigned.</p><p>Credit card accounts can be assigned to only one subsidiary.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3758988949.html"
+    },
+    {
+        "title": "To modify an existing company credit card account:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts</em>.</p>"
+            },
+            {
+                "instruction": "<p>From the Chart of Accounts, click <strong>Edit</strong> next to the credit card account you want to modify.</p>"
+            },
+            {
+                "instruction": "<p>Modify the fields as needed.</p><p>You cannot change the currency associated with the account because transactions in this currency exist in the system.</p><p>From the <strong>Actions</strong> menu you can delete the company credit card account or merge the account into another company credit card account.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3758988949.html"
+    }
+]
