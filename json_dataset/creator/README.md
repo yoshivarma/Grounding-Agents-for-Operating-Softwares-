@@ -6,7 +6,7 @@ This is a tool for scraping the NetSuite Documentation for different instruction
 
 1. Install [Node.js](https://nodejs.org/en/download/)
 2. In this directory, run `npm install`
-3. Go to `gen.js`, and at the bottom change the url to the url of the page you want to scrape
+3. Go to `gen.js`, and at the bottom change the urls list to the urls you want to scrape
 4. Run `node gen.js`
 5. The output will be in `data.json`
 

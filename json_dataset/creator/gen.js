@@ -19,9 +19,8 @@ function print_nice(obj, depth = 3) {
 }
 
 
-function get_instruction_list(id, div) {
-    id++
-    const res = { id }
+function get_instruction_list(_, div) {
+    const res = {}
     for (const child of div.children) {
         if (child.type != 'tag') continue
         const tag = child?.tagName?.toLowerCase()
@@ -33,18 +32,16 @@ function get_instruction_list(id, div) {
                 const lis = []
                 for (let li of child.children) {
                     if (li.type != 'tag') continue
-                    lis.push(get_instruction_list(lis.length, li))
+                    lis.push(get_instruction_list(_, li))
                 }
                 res['steps'] = lis
                 break
             case 'h4':
-                res['title'] = $(child).text()
-                break
-            case 'p':
-                res['sub_title'] = $(child).text()
+                res['title'] = $(child).html()
                 break
             default:
-                console.log('unknown tag', tag)
+                res['instruction'] = `${res['instruction'] ?? ''}<${tag}>${$(child).html()}</${tag}>`
+                break
         }
     }
     return res
@@ -63,9 +60,38 @@ async function scrape(url) {
     $ = cheerio.load(text)
     const ols = $('ol').filter(not_sub_list).map((_, elem) => elem.parent)
     const parsed = ols.map(get_instruction_list).get()
-    parsed.forEach(elem => elem.url = url)
-    save_json(parsed)
+    parsed.forEach(elem => {
+        elem.url = url
+        elem.status = 'incomplete'
+    })
+    return parsed
 }
 
-const url = 'https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html'
-scrape(url)
+async function scrapeMany(urls) {
+    res = []
+    for (const url of urls) {
+        res.push(...await scrape(url))
+    }
+    save_json(res)
+}
+
+// const url = 'https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_161063246409.html'
+// scrape(url)
+
+const urls = [
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1553542323.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N950964.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1147232.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1171112.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1171354.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1173679.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186284.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186612.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186943.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1187267.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1201405.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+    "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_161677217185.html"
+]
+
+scrapeMany(urls)
