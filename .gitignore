@@ -9,3 +9,7 @@ venv
 
 # Node Modules
 node_modules/
+
+# Log files
+*.log
+*.out
