@@ -1545,47 +1545,1752 @@
     },
     {
         "title": "To add a new company credit card account:",
+        "description": "How to add a new company credit card account",
+        "status": "Waiting for review",
         "steps": [
             {
-                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts &gt; New</em>.</p>"
+                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts &gt; New</em>.</p>",
+                "description": "Go to Chart of Accounts New Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounting"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Manage G/L"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Chart of Accounts"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>In the <strong>Type</strong> list, select <strong>Credit Card</strong>.</p>"
+                "instruction": "<p>In the <strong>Type</strong> list, select <strong>Credit Card</strong>.</p>",
+                "description": "Select Credit Card",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Type"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Type",
+                            "Credit Card"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>Enter the number to identify this account.</p>"
+                "instruction": "<p>Enter the number to identify this account.</p>",
+                "description": "Enter account number",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Account Number"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Account Number"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>Enter a name for the account.</p>"
+                "instruction": "<p>Enter a name for the account.</p>",
+                "description": "Enter account name",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Account Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Account Name"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>Complete other fields as needed.</p>"
+                "instruction": "<p>Complete other fields as needed.</p>",
+                "description": "Complete other fields",
+                "meta": "Unknown other fields",
+                "output": []
             },
             {
-                "instruction": "<p>If you use NetSuite OneWorld, choose the subsidiary to which this credit card should be assigned.</p><p>Credit card accounts can be assigned to only one subsidiary.</p>"
+                "instruction": "<p>If you use NetSuite OneWorld, choose the subsidiary to which this credit card should be assigned.</p><p>Credit card accounts can be assigned to only one subsidiary.</p>",
+                "description": "Choose subsidiary",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Subsidiary"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Subsidiary"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>Click <strong>Save</strong>.</p>"
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
             }
         ],
         "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3758988949.html"
     },
     {
         "title": "To modify an existing company credit card account:",
+        "description": "How to modify an existing company credit card account",
+        "status": "Waiting for review",
         "steps": [
             {
-                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts</em>.</p>"
+                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Manage G/L &gt; Chart of Accounts</em>.</p>",
+                "description": "Go to Chart of Accounts Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounting"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Manage G/L"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Chart of Accounts"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>From the Chart of Accounts, click <strong>Edit</strong> next to the credit card account you want to modify.</p>"
+                "instruction": "<p>From the Chart of Accounts, click <strong>Edit</strong> next to the credit card account you want to modify.</p>",
+                "description": "Click Edit",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
             },
             {
-                "instruction": "<p>Modify the fields as needed.</p><p>You cannot change the currency associated with the account because transactions in this currency exist in the system.</p><p>From the <strong>Actions</strong> menu you can delete the company credit card account or merge the account into another company credit card account.</p>"
+                "instruction": "<p>Modify the fields as needed.</p><p>You cannot change the currency associated with the account because transactions in this currency exist in the system.</p><p>From the <strong>Actions</strong> menu you can delete the company credit card account or merge the account into another company credit card account.</p>",
+                "description": "Modify fields",
+                "meta": "Unknown fields",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3758988949.html"
+    },
+    {
+        "title": "To set up issue priorities:",
+        "description": "How to set up issue priorities",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Issues &gt; Setup &gt; Issue Priorities</em>.</p>",
+                "description": "Go to Issue Priorities Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issues"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issue Priorities"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Issue Priorities</strong> list, click the last row if it is not already selected. This row should be blank.</p>",
+                "description": "Click last row",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Issue Priorities"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issue Priorities",
+                            "last"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Name</strong> column, enter a name for the priority level you want to add. For example, to add to the list of default priorities, you can continue numbering P6, P7, P8, and so on.</p><p>This name will be available to select in the <strong>Priority</strong> field on issue records.</p>",
+                "description": "Enter name for priority level",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Name"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Description</strong> column, enter a brief description of what types of issues meet this priority level.</p>",
+                "description": "Enter description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Description"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Description"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add.</strong></p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2442386.html"
+    },
+    {
+        "title": "To set up issue severities:",
+        "description": "How to set up issue severities",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Issues &gt; Setup &gt; Issue Severities</em>.</p>",
+                "description": "Go to Issue Severities Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issues"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issue Severities"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Issue Severities</strong> list, click the last row if it is not already selected. This row should be blank.</p>",
+                "description": "Click last row",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Issue Severities"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Issue Severities",
+                            "last"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Name</strong> column, enter a descriptive name for the severity level you want to add.</p><p>This name will be available to select in the <strong>Severity</strong> field on issue records.</p>",
+                "description": "Enter name for severity level",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Name"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Description</strong> column, enter a brief description of what types of issues meet this severity level.</p>",
+                "description": "Enter description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Description"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Description"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2442248.html"
+    },
+    {
+        "title": "To edit a retirement plan:",
+        "description": "How to edit a retirement plan",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Payroll &gt; Setup Tasks &gt; Retirement Plans</em>.</p>",
+                "description": "Go to Retirement Plans Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Payroll"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup Tasks"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Retirement Plans"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the number next to the retirement plan you want to edit.</p>",
+                "description": "Click retirement plan",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Retirement Plans"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Retirement Plans Number"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Make your changes.</p>",
+                "description": "Make changes",
+                "meta": "Unknown fields",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_162612273583.html"
+    },
+    {
+        "title": "To create a payroll item group:",
+        "description": "How to create a payroll item group",
+        "status": "Waiting for review",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Employees &gt; Payroll Item Groups &gt; New</em>.</p>",
+                "description": "Go to Payroll Item Groups Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Employees"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Payroll Item Groups"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>If you have a OneWorld account, from the <strong>Subsidiary</strong> list, select a subsidiary.</p>",
+                "description": "Select subsidiary",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Subsidiary"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Subsidiary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Group Name</strong> field, enter a unique and meaningful name for the payroll item group.</p>",
+                "description": "Enter name for payroll item group",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Group Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Group Name"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Payroll Items</strong> list, select at least two payroll items to include in the payroll item group.</p>",
+                "description": "Select payroll items",
+                "meta": "Is this a good way to express the 'at least 2 items' requirement?",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_161063246409.html"
+    },
+    {
+        "title": "To inactivate a payroll item:",
+        "description": "How to inactivate a payroll item",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Employees &gt; Payroll Items</em>.</p>",
+                "description": "Go to Payroll Items Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Employees"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Beside the payroll item that you want to inactivate, click <strong>Edit</strong>.</p>",
+                "description": "Click Edit",
+                "meta": "Relative Description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Check the <strong>Inactive</strong> box.</p>",
+                "description": "Check Inactive box",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Inactive"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Inactive"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1553542323.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To delete a payroll item:",
+        "description": "How to delete a payroll item",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Employees &gt; Payroll Items</em>.</p>",
+                "description": "Go to Payroll Items Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Employees"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Beside the payroll item that you want to delete, click <strong>Edit</strong>.</p>",
+                "description": "Click Edit",
+                "meta": "Relative Description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Payroll Items"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the <strong>Actions</strong> menu, select <strong>Delete</strong>.</p>",
+                "description": "Select Delete",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Actions"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Delete"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1553542323.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To run a paycheck search:",
+        "description": "How to run a paycheck search",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Reports &gt; New Search</em>.</p>",
+                "description": "Go to New Search Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Reports"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New Search"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the Search list, click <strong>Paycheck</strong>.</p>",
+                "description": "Click Paycheck",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Search"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Paycheck"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N950964.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To assign a commission plan to a sales rep:",
+        "description": "How to assign a commission plan to a sales rep",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Commissions &gt; Employee Plans</em>.</p>",
+                "description": "Go to Employee Plans Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Commissions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Employee Plans"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to the commission plan to which you want to assign a sales rep.</p>",
+                "description": "Click Edit",
+                "meta": "Relative Description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Employee Plans"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>Assign Plan to Sales Reps</strong> subtab.</p>",
+                "description": "Enter Assign Plan to Sales Reps subtab",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Assign Plan to Sales Reps"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Sales Rep</strong> column, select the sales rep you want to assign to the plan.</p>",
+                "description": "Select Sales Rep",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Sales Rep"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Sales Rep"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>From</strong> column, enter the date this plan begins to calculate commission for this sales rep.</p>",
+                "description": "Enter From Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "From"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "From"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>To</strong> column, enter the last date this plan calculates commission for this sales rep.</p>",
+                "description": "Enter To Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "To"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "To"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Repeat these steps for each sales rep to whom you want to assign this plan.</p>",
+                "description": "Repeat steps for each sales rep",
+                "meta": "Do we want a looping action?",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1147232.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To create a commission plan:",
+        "description": "How to create a commission plan",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Commissions &gt; Partner Plans &gt; New</em>.</p>",
+                "description": "Go to Partner Plans Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Commissions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Partner Plans"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Name</strong> field, enter a name for this plan.</p>",
+                "description": "Enter Name",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Name"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Enter a description of this plan.</p>",
+                "description": "Enter Description",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Description"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Description"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Add Schedules to Plan</strong> subtab, in the <strong>Schedule</strong> column, select a schedule to include in this plan.</p>",
+                "description": "Select Schedule",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add Schedules to Plan"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Schedule"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Schedule"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Repeat steps 4 and 5 for each commission schedule you want to include in this plan.</p>",
+                "description": "Repeat steps for each schedule",
+                "meta": "Do we want a looping action?",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click the <strong>Assign Plan to Partners</strong> subtab.</p>",
+                "description": "Click Assign Plan to Partners",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Assign Plan to Partners"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Partner</strong> column, select a partner to assign to this plan.</p>",
+                "description": "Select Partner",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Partner"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Partner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>From</strong> column, enter or pick the date this plan takes effect for this partner.</p>",
+                "description": "Enter From Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "From"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "From"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>To</strong> column, enter or pick the last date you want this plan to generate commission for this partner.</p>",
+                "description": "Enter To Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "To"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "To"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Repeat steps 8 - 11 for each partner you want to assign to this plan.</p>",
+                "description": "Repeat steps for each partner",
+                "meta": "Do we want a looping action?",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1171112.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To assign a commission plan to a partner:",
+        "description": "Assign a commission plan to a partner",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Commissions &gt; Partner Plans</em>.</p>",
+                "description": "Partner Plans Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Commissions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Partner Plans"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to the commission plan to which you want to assign a partner.</p>",
+                "description": "Click Edit",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>Assign Plan to Partners</strong> subtab.</p>",
+                "description": "Click Assign Plan to Partners",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Assign Plan to Partners"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Partner</strong> column, select the partner you want to assign to the plan.</p>",
+                "description": "Select Partner",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Partner"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Partner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>From</strong> column, enter the date this plan begins to calculate commission for this partner.</p>",
+                "description": "Enter From Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "From"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "From"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>To</strong> column, enter the last date this plan calculates commission for this partner.</p>",
+                "description": "Enter To Date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "To"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "To"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Add</strong>.</p>",
+                "description": "Click Add",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Add"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Repeat steps 4 - 7 for each partner to which you want to assign this plan.</p>",
+                "description": "Repeat steps for each partner",
+                "meta": "Do we want a looping action?",
+                "output": []
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description": "Click Save",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1171354.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To approve a commission transaction for payment:",
+        "description": "Approve a commission transaction for payment",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Commissions &gt; Approve Partner Commissions</em>.</p><p>The Approve Partner Commissions page displays a list of commission transactions pending approval.</p>",
+                "description": "Go to the Approve Partner Commissions Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Commissions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Approve Partner Commissions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Approve</strong> column, check the box next to the commission transactions to approve, or click <strong>Mark All</strong>.</p>",
+                "description": "Check the box next to the commission transactions to approve",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Approve Check Box"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Approve</strong>.</p>",
+                "description": "Click Approve",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Approve"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1173679.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To reject a commission transaction:",
+        "description": "Reject a commission transaction",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Commissions &gt; Approve Partner Commissions</em>.</p><p>The Approve Partner Commissions page displays a list of commission transactions pending approval.</p>",
+                "description": "Go to the Approve Partner Commissions Page",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Commissions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Approve Partner Commissions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to the commission you want to reject.</p><p>The commission transaction opens.</p>",
+                "description": "Click Edit next to the commission you want to reject",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Reject</strong>.</p>",
+                "description": "Click Reject",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Reject"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1173679.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "To copy a project:",
+        "description": "Copy a project",
+        "steps": [
+            {
+                "instruction": "<p>Open an existing project in Edit mode.</p>",
+                "description": "Open an existing project in Edit mode",
+                "meta": "Not enough information",
+                "output": []
+            },
+            {
+                "instruction": "<p>Change the <strong>Project ID</strong>, if not auto-generated, or <strong>Project Name</strong>.</p>",
+                "description": "Change the Project ID or Project Name",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Project ID"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Project ID"
+                        ]
+                    },
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Project Name"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Project Name"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>You can opt to enter a new project start date. Note that changing this field alone does not enable you to copy a project.</p>",
+                "description": "Enter a new project start date",
+                "output": [
+                    {
+                        "action": "focus",
+                        "param": [
+                            "Project Start Date"
+                        ]
+                    },
+                    {
+                        "action": "type",
+                        "param": [
+                            "Project Start Date"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save As</strong> in the Save button dropdown <strong>.</strong></p>",
+                "description": "Click Save As in the Save button dropdown",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save As"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186284.html",
+        "status": "Waiting for review"
+    },
+    {
+        "title": "Setting a service item to create a project:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Accounting &gt; Items</em>. Click <strong>Edit</strong> next to the service item.</p>"
+            },
+            {
+                "instruction": "<p>On the item record, click the <strong>Related Records</strong> subtab.</p>"
+            },
+            {
+                "instruction": "<p>Click the <strong>Projects</strong> subtab.</p>"
+            },
+            {
+                "instruction": "<p>Check the <strong>Create Project</strong> box.</p>"
+            },
+            {
+                "instruction": "<p>If you want to use a defined project template for projects created from this service item, select a template in the <strong>Project Template</strong> field.</p>"
+            },
+            {
+                "instruction": "<p>If you do not want to use a defined project template, you must define the tasks required to complete the project. For each task, complete the following steps:</p>",
+                "steps": [
+                    {
+                        "instruction": "<p>In the <strong>Task Template Name</strong> field, enter the task name. This is the task name that appears on project records created for this item.</p>"
+                    },
+                    {
+                        "instruction": "<p>In the <strong>Start Date Offset</strong> field, specify the start date of the tasks relative to the project start date. For example, if the task starts two days after the project start date, enter <strong>2</strong>.</p>"
+                    },
+                    {
+                        "instruction": "<p>In the <strong>Effort</strong> (hours) field, specify the total number of hours typically required to complete this task. This number of hours is set as the initial time budget for this task on project records created for this item.</p>"
+                    },
+                    {
+                        "instruction": "<p>Click <strong>Add</strong>.</p>"
+                    }
+                ]
             },
             {
                 "instruction": "<p>Click <strong>Save</strong>.</p>"
             }
         ],
-        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3758988949.html"
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186612.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To set the Consolidate Projects on Sales Transactions preference:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Accounting &gt; Preferences &gt; Accounting Preferences</em>. Choose <strong>Items/Transactions</strong>.</p>"
+            },
+            {
+                "instruction": "<p>In the Sales &amp; Pricing section, set your preference for consolidating projects based on the information above.</p><ul>\n                <li>\n                  <p>Check the <strong>Consolidate Projects on Sales Transactions</strong> box to enable the preference.</p>\n                </li>\n                <li>\n                  <p>Clear the <strong>Consolidate Projects on Sales Transactions</strong> box to disable the preference.</p>\n                </li>\n              </ul>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1186943.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To create an estimate from a project:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Relationships &gt; Projects.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>View</strong> next to the project you want to create an estimate from.</p>"
+            },
+            {
+                "instruction": "<p>On the project record, click <strong>Estimate</strong> from the New menu.</p><p>A new estimate form opens. The customer from the project record autofills on the estimate.</p>"
+            },
+            {
+                "instruction": "<p>Optionally enter a title for this estimate in the <strong>Title</strong> field. The estimate title text appears on lists, shows in search and reporting results, and shows on the <strong>Estimates</strong> subtab of records it is associated with.</p>"
+            },
+            {
+                "instruction": "<p>Complete the estimate form as necessary. For details, read, <a href=\"section_N1069843.html\">Preparing an Estimate</a>.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1187267.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To customize a project form to use CRM tasks:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Relationships &gt; Projects and click <strong>Edit</strong> next to the project.</p>"
+            },
+            {
+                "instruction": "<p>On the project form, click <strong>Customize</strong>.</p>"
+            },
+            {
+                "instruction": "<p>Enter a name for the form.</p>"
+            },
+            {
+                "instruction": "<p>Click the <strong>Fields</strong> subtab.</p>"
+            },
+            {
+                "instruction": "<p>Click the <strong>Info</strong> subtab.</p>"
+            },
+            {
+                "instruction": "<p>Check the <strong>Show</strong> box next to <strong>Include CRM Tasks in Job Totals</strong>.</p>"
+            },
+            {
+                "instruction": "<p>Complete other fields on the form as needed.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1201405.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To define the default search for the Resource Manager role:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Search &gt; Saved Searches.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to Resource Search.</p>"
+            },
+            {
+                "instruction": "<p>In the <strong>Search Title</strong> field, enter <strong>Project Resource Search</strong>.</p>"
+            },
+            {
+                "instruction": "<p>On the <strong>Roles</strong> tab, find the Resource Manager role and check all the boxes in that row.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save As</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To create a skill category:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Setup &gt; Services &gt; Skill Category &gt; New.</p>"
+            },
+            {
+                "instruction": "<p>Enter a name for this skill category.</p><p>For example, you could create a category named Software to record employees’ skill levels with the types of software your company uses.</p>"
+            },
+            {
+                "instruction": "<p>On the <strong>Skill</strong> tab, enter the names of each skill you want included in this category. Click <strong>Add</strong> after each skill.</p>"
+            },
+            {
+                "instruction": "<p>On the <strong>Skill Level</strong> tab, there are three default skill levels provided. You can edit the existing levels by selecting the line you want to edit, making your changes and clicking <strong>Done</strong>. Add new levels by inserting a line or adding a new line to the bottom of the list. Skill levels should appear in this list from lowest to highest proficiency.</p><p>The level you enter here are available for each skill entered on the <strong>Skill</strong> tab.</p>"
+            },
+            {
+                "instruction": "<p>When you have finished, click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To add skills to an employee or vendor record:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Employees &gt; Employees</em> for an employee record or <em>Lists &gt; Relationships &gt; Vendors</em> to update a vendor record.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to the record you want to update.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Skills &amp; Expertise</strong>.</p>"
+            },
+            {
+                "instruction": "<p>Enter the number of years of experience for this resource.</p>"
+            },
+            {
+                "instruction": "<p>On the subtabs, select skills for each skill category and set the skill level. Click <strong>Add</strong> after each added skill.</p>"
+            },
+            {
+                "instruction": "<p>On the <strong>Portfolio</strong> subtab, you can enter social media information and upload a recent resume or work samples.</p>"
+            },
+            {
+                "instruction": "<p>When you have finished, click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To update skills for project resources:",
+        "steps": [
+            {
+                "instruction": "<p>While logged in as an administrator go to Lists &gt; Relationships &gt; Resources.</p><p>Resource managers can go to Cases &gt; Other Lists &gt; Resources.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Edit</strong> next to the project resource you want to update.</p>"
+            },
+            {
+                "instruction": "<p>On the subtabs, select skills for each skill category and set the skill level. Click <strong>Add</strong> after each added skill.</p>"
+            },
+            {
+                "instruction": "<p>On the <strong>Portfolio</strong> subtab, you can enter social media information and upload a recent resume or work samples.</p>"
+            },
+            {
+                "instruction": "<p>When you have finished, click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To search project resources based on skill categories using the resource allocation chart:",
+        "steps": [
+            {
+                "instruction": "<p>While logged in as an administrator, go to Lists &gt; Services &gt; Resource Allocation Chart.</p><p>Resource Managers can go to Cases &gt; Other Lists &gt; Resource Allocation Chart.</p><p>For more information on the resource allocation chart, see <a href=\"section_3746921235.html\">Resource Allocation Chart/Grid SuiteApp</a>.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>New Allocation</strong>.</p>"
+            },
+            {
+                "instruction": "<p>Click the <strong>Search</strong> icon next to the <strong>Resource</strong> field.</p><img></img>"
+            },
+            {
+                "instruction": "<p>In the Availability section, select a date range and <strong>% Available</strong> required for this allocation.</p><p>Percent availability is calculated as Unallocated Working Hours / Total Working Hours.</p>"
+            },
+            {
+                "instruction": "<p>In the Other section, enter additional required criteria, such as billing class, labor cost, and years of experience.</p>"
+            },
+            {
+                "instruction": "<p>Under <strong>Available Skills</strong>, select the desired skill and click the arrow to move the skills to the <strong>Required Skills</strong> box.</p>"
+            },
+            {
+                "instruction": "<p>When you have finished, click <strong>Submit</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3746921522.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To derive a pay rate from another payroll item:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Lists &gt; Employees &gt; Payroll Items</em>.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>New</strong> to create a new payroll item or click <strong>Edit</strong> beside an existing payroll item that you want to edit. For more information, see <a href=\"section_1556724572.html\">Creating Payroll Items</a>.</p>"
+            },
+            {
+                "instruction": "<p>For an earning payroll item, in the <strong>Derived From</strong> list, select the payroll item you want to derive the pay rate from.</p>"
+            },
+            {
+                "instruction": "<p>For a deduction or employer contribution payroll item, in the <strong>Derived From Type</strong> list, select <strong>Payroll Item</strong>.</p><p>In the <strong>Derived From Payroll Item</strong> list, select the payroll item you want to derive the pay rate from.</p>"
+            },
+            {
+                "instruction": "<p>In the <strong>Rate Multiplier</strong> field, enter the multiplier as a number, not a percentage.</p><p>This number can be a decimal fraction, such as 0.25. Negative numbers are also supported.</p>"
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>"
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_161677217185.html",
+        "status": "incomplete"
     }
 ]
