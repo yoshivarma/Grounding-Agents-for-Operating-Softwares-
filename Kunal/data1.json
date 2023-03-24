@@ -1,0 +1,868 @@
+[
+    {
+        "title": "To add the Deposit permission:",
+        "instruction": "<p>If you want to record a customer deposit, follow the preceding steps but select the Customer Deposit permission. To record a customer deposit, see <a href=\"section_N1296669.html\">Recording a Customer Deposit</a>.</p>",
+        "steps": [
+            {
+                "instruction": "<p>Log in as an administrator.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Log In"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Users/Roles &gt; Manage Roles</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Users/Roles"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                           "Manage Roles"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Manage Roles page, click <strong>Edit</strong> next to the custom role you want to modify.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Permissions</strong> subtab of the Role page, look for the Transactions sublist.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Permissions"
+                        ]
+                    },
+                    {
+                        "action": "search",
+                        "param": [
+                            "Transactions"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the dropdown list in the Permission column, select <strong>Deposit</strong>.</p>",
+                "output": [
+                    {
+                        "action": "select",
+                        "param": [
+                            "Deposit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the dropdown list in the Level column, select the level of access for the permission.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Level"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Level of Access"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>OK</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Ok"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To edit a saved deposit in the Deposits list:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits &gt; List</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the Deposits list, click <strong>Edit</strong> next to the deposit you want to modify.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Deposit page, modify the saved deposit as required.</p>",
+                "output": [
+                    {
+                        "action": "input",
+                        "param": [
+                            "Deposit = $100"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.",
+                "description": "<p>If you modified the deposit amount, a prompt to unreconcile the transaction appears.</p>Click <strong>OK</strong>. Open the correct statement period for the transaction and reconcile the transaction again.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To delete an existing deposit from the Deposits list:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Transactions &gt; Bank &gt; Make Deposits &gt; List</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transactions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Bank"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Make Deposits"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "List"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the Deposits list, click <strong>Edit</strong> next to the deposit you want to delete.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit next to a deposit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the Deposit page, under <strong>Actions</strong>, click <strong>Delete</strong>.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Actions"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Delete"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>At the prompt to confirm the action, click <strong>OK</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Ok"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N1542431.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To enable the Payroll feature:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Company &gt; Enable Features</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Company"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Enable Features"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>Employees</strong> subtab.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Employees"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Check the <strong>Payroll</strong> box.</p>",
+                "output": [
+                    {
+                        "action": "check",
+                        "param": [
+                            "Payroll"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>For additional payroll related features, such as time tracking and service printed checks and stubs, select the applicable boxes.</p>",
+                "output": [
+                    {
+                        "action": "select",
+                        "param": [
+                            "Time tracking"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N917966.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To enter the company information required for Payroll:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Company &gt; Company Information</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Company"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Company Information"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Enter or select the information in the fields listed above.</p>",
+                "output": [
+                    {
+                        "action": "select",
+                        "param": [
+                            "Information"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N918232.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To set default accounts for Payroll:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Payroll &gt; Set Up Payroll</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Payroll"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Set Up Payroll"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>Default Accounts</strong> tab.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Default Accounts"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Gross Pay</strong> list, select the general ledger account to use for your gross pay.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Gross Pay List"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "General Ledger Account"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Payroll Expenses Account</strong> list, select the account to use for payroll expenses.</p>",
+                "description": "This is used as the default expense account.",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Payroll Expenses Account List"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Account"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Payroll Liabilities Account</strong> list, select the account to use for payroll liabilities.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Payroll Liabilities Account List"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Account"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>In the <strong>Payroll Funding Account</strong> list, select the account to use to fund payrolls.",
+                "description": "NetSuite withdraws funds from this account to satisfy payments to employees and tax agencies.<p>If you use NetSuite OneWorld, not all bank accounts are available. To appear in this list, a bank account must be restricted to the Payroll Subsidiary defined at the top of the Set Up Payroll page. The currency should be USA (U.S. dollars).</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Payroll Funding Account List"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "Account"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/bridgehead_N921047.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To create a custom payroll transaction body field:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Customization &gt; Lists, Records, &amp; Fields &gt; Transaction Body Fields &gt; New</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Customization"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists, Records, & Fields"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Transaction Body Fields"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Enter a <strong>Label</strong> and optional <strong>Description</strong> for the custom payroll transaction body field.</p>",
+                "output": [
+                    {
+                        "action": "input",
+                        "param": [
+                            "Label"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>On the <strong>Applies To</strong> subtab, check the <strong>Paycheck</strong> box.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Applies To"
+                        ]
+                    },
+                    {
+                        "action": "check",
+                        "param": [
+                            "Paycheck"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "description" : "<p>The new field displays on the <strong>Custom</strong> subtab of any standard and customized Paycheck Journal record.</p><p>On custom forms, this field can be moved.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N972561.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To enable SuiteFlow:",
+        "steps": [
+            {
+                "instruction": "<p>Go to <em>Setup &gt; Company&gt; Setup Tasks &gt; Enable Features</em>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Company"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Setup Tasks"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Enable Features"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click the <strong>SuiteCloud</strong> tab.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "SuiteCloud"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Under SuiteFlow, check the <strong>SuiteFlow</strong> box.</p>",
+                "output": [
+                    {
+                        "action": "check",
+                        "param": [
+                            "SuiteFlow"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1489429767.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To create a Constituent record:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Relationships &gt; Constituents &gt; New.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Relationships"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Constituents"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "New"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>For <strong>Type</strong>, choose <strong>Company</strong> or <strong>Individual</strong>.</p><p>The arrangement of the fields on the page changes depending on your selection.</p>",
+                "output": [
+                    {
+                        "action": "select",
+                        "param": [
+                            "Company"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Complete the fields for the constituent as desired. Required fields are identified by a gold asterisk (*).</p>",
+                "output": [
+                    {
+                        "action": "input",
+                        "param": [
+                            "Constituent"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>When you have finished, click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1536271516.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To update a Constituent record:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Relationships &gt; Constituents.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Relationships"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Constituents"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Locate the appropriate constituent record and click <strong>Edit</strong>.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Appropriate Constituent Record"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Change any fields as appropriate.</p>",
+                "output": [
+                    {
+                        "action": "input",
+                        "param": [
+                            "Fields"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>Save</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Save"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1536271516.html",
+        "status": "incomplete"
+    },
+    {
+        "title": "To delete a Constituent record:",
+        "steps": [
+            {
+                "instruction": "<p>Go to Lists &gt; Relationships &gt; Constituents.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Relationships"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Constituents"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Locate the appropriate constituent record and click <strong>Edit</strong>.</p>",
+                "output": [
+                    {
+                        "action": "search",
+                        "param": [
+                            "Appropriate Constituent Record"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>From the <strong>Actions</strong> list, select <strong>Delete</strong>.</p>",
+                "description": "<p>The system displays a popup window asking if you are sure you want to delete the record.</p>",
+                "output": [
+                    {
+                        "action": "select",
+                        "param": [
+                            "Delete"
+                        ]
+                    }
+                ]
+            },
+            {
+                "instruction": "<p>Click <strong>OK</strong>.</p>",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Ok"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1536271516.html",
+        "status": "incomplete"
+    }
+]
