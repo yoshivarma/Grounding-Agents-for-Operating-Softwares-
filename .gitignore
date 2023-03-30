@@ -13,3 +13,7 @@ node_modules/
 # Log files
 *.log
 *.out
+
+.vscode/
+
+__pycache__/
