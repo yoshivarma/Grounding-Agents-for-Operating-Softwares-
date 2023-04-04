@@ -1,0 +1,70 @@
+[
+    {
+        "status": "Waiting for review",
+        "title": "To find the COGS account for an item:",
+        "instruction": "<p>Go to Lists > Accounting > Items.</p> <p>Select an item.</p> <p>Click View.</p>",
+        "steps": [
+            {
+                "description": "To find COGS account for an item, go through the steps sequentially. At each step, identify the action verb and which entity the action is being performed. In Step 1, click on Lists, then click on Accounting and then click on Items, so Step 1 can be re-written as : click[Lists], click[Accounting], click[Items]. In Step 2, the action verb is ‘select’ and the entity on which the action needs to be performed is ‘item’, hence we can convert it into select[item].  In Step 3, the action verb is ‘click’ and the entity on which the action needs to be performed is ‘View’, hence we can convert it into click[View]. So the answer is: Step 1: click[Lists], click[Accounting], click[Items]. Step 2: select[item]. Step 3: click[View].",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Lists"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Accounting"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Items"
+                        ]
+                    },
+                    {
+                        "action": "select",
+                        "param": [
+                            "item"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "View"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_163637852301.html"
+    },
+    {
+        "status": "Waiting for review",
+        "title": "To find the COGS account for an item:",
+        "instruction": "<p>Go to Lists > Accounting > Items.</p> <p>Select an item.</p> <p>Click View.</p>",
+        "steps": [
+            {
+                "description": "To void a check, from Step 1, the action verb is click and the entity on which this action needs to be performed is Edit, hence Step 1 can be translated to click[Edit].  In Step 2, the action verb is click and the entity on which this action is to be performed is Void button, hence Step 2 can be translated to click[Void]  . So the answer is : Step 1: click[Edit], Step 2: click[Void].",
+                "output": [
+                    {
+                        "action": "click",
+                        "param": [
+                            "Edit"
+                        ]
+                    },
+                    {
+                        "action": "click",
+                        "param": [
+                            "Void"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_163637852301.html"
+    }
+]
